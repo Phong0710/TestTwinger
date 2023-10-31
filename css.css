@@ -165,7 +165,16 @@
     top: 540px;
     left: 510px;
 }
+.asset{
+    position: absolute;
+    width: 975px;
+    height: 779px;
+    top: 497px;
+    left: -236px;
+    z-index: 1;
 
+
+}
 .lat2, .chinh2, .phu2, .back, .next, .anh2, .anh3 {
     display: none;
 }
@@ -330,6 +339,6 @@
         left: 175px;
         gap: 8px;
         z-index: 1;
-
     }
+
 }
