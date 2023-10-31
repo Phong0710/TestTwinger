@@ -92,6 +92,7 @@
     left: 700px;
     gap: 8px;
     border: 3px;
+    z-index: 1;
 }
 
 .frame {
@@ -141,6 +142,7 @@
     width: 480px;
     height: 800px;
     left: 480px;
+    overflow: hidden
 }
 
 .img3 {
@@ -160,27 +162,37 @@
 
 .text {
     position: absolute;
-    width: 420px;
-    height: 194px;
-    top: 540px;
-    left: 510px;
+    width: 282px;
+    height: 186px;
+    top: 523px;
+    left: 579px
+
 }
-.asset{
+
+.rectangle {
     position: absolute;
-    width: 975px;
-    height: 779px;
-    top: 497px;
-    left: -236px;
-    z-index: 1;
-
-
+    width: 480px;
+    height: 562px;
+    top: 238px;
+    left: 480px;
 }
-.lat2, .chinh2, .phu2, .back, .next, .anh2, .anh3 {
+
+.asset {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    top: 320px;
+    left: 480px;
+    mix-blend-mode: hard-light;
+    z-index: 1;
+}
+
+.lat2, .chinh2, .phu2, .back, .next, .anh1, .anh2, .anh3, .mask-group1,.snapbar,.tabbar {
     display: none;
 }
 
 @media screen and (max-width: 390px) {
-    .doc, .chinh, .lat, .phu, .contact, .frame-logo, .img1, .img3, .frame {
+    .doc, .chinh, .lat, .phu, .contact, .frame-logo, .img1, .img2, .img3, .frame, .mask-group {
         display: none;
     }
 
@@ -188,13 +200,34 @@
         width: 390px;
         height: 797px;
         overflow: hidden;
+        position: relative;
+    }
+
+    /*.snapbar {*/
+    /*    display: block;*/
+    /*    position: absolute;*/
+    /*    width: 390px;*/
+    /*    height: 47px;*/
+    /*    top: 0;*/
+    /*}*/
+    .tabbar{
+        display: block;
+        position: absolute;
+        width: 390px;
+    height: 133px;
+    bottom: 0px;
+    padding: 10px 0px 0px 0px;
+        z-index: 2;
+
     }
 
     .header {
+        position: absolute;
         width: 390px;
         height: 92px;
-        z-index: 1;
+        top: 0px;
     }
+
 
     .logo {
         width: 150px;
@@ -266,15 +299,19 @@
     }
 
 
-    .img2 {
+    .anh1 {
+        display: block;
         width: 390px;
         height: 430px;
-        top: 0;
+        top: 0px;
         left: 0;
         position: absolute;
+        z-index: -1;
     }
 
-    .mask-group {
+    .mask-group1 {
+        display: block;
+        position: absolute;
         width: 128px;
         height: 156px;
         top: 92px;
@@ -285,8 +322,9 @@
     .text {
         width: 281px;
         height: 116px;
-        top: 282px;
-        left: 55px;
+        top: 293px;
+        left: 50px;
+
 
     }
 
@@ -297,7 +335,7 @@
         height: 32px;
         top: 316px;
         left: 16px;
-        /*padding: 10.25px 0px 10.5px 0px;*/
+        padding: 10.25px 0px 10.5px 0px;
         border-radius: 48px;
         border: 2px;
         z-index: 1;
@@ -311,7 +349,7 @@
         height: 32px;
         top: 316px;
         left: 342px;
-        /*padding: 10.25px 0px 10.5px 0px;*/
+        padding: 10.25px 0px 10.5px 0px;
         border-radius: 48px;
         border: 2px;
         z-index: 1;
@@ -339,6 +377,22 @@
         left: 175px;
         gap: 8px;
         z-index: 1;
+    }
+
+    .rectangle {
+        position: absolute;
+        width: 390px;
+        height: 330px;
+        top: 100px;
+        left: 0;
+    }
+
+    .asset {
+        position: absolute;
+        width: 480px;
+        height: 480px;
+        top: -50px;
+        left: 0px;
     }
 
 }
