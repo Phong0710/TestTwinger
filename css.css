@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 1440px;
+    height: 800px;
+    /*top: 920px;*/
+}
+
+.section-1.container > * {
+    position: absolute;
+}
+
+.header {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    height: 77px;
+    width: 196px;
+    top: 36px;
+    left: 52px;
+}
+
+.section-1_btn {
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    top: 36px;
+    left: 1205px;
+    padding: 14px 24px 14px 24px;
+    background: #FFDE17;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+
+}
+
+.lat {
+    left: 196px;
+}
+
+.chinh {
+    left: 384px;
+}
+
+.section-1_text {
+    width: 387px;
+    height: 125px;
+    top: 603px;
+    left: 72px;
+
+}
+
+.khampha {
+    width: 152px;
+    height: 52px;
+    top: 712px;
+    left: 644px;
+    padding: 0px 12px 0px 12px;
+    gap: 8px;
+    text-align: center;
+}
+
+.khampha > p {
+    color: white;
+}
+
+.contact {
+    width: 48px;
+    height: 104px;
+    top: 660px;
+    left: 1356px;
+}
+
+.contact > img {
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.slider {
+    position: absolute;
+    width: 40px;
+    height: 8px;
+    top: 756px;
+    left: 700px;
+    gap: 8px;
+    border: 3px;
+}
+
+.frame {
+    position: absolute;
+    top: 376px;
+    display: flex;
+    width: 48px;
+    height: 48px;
+}
+
+.item-frame-left,
+.item-frame-right {
+    position: absolute;
+    display: flex;
+    padding: 17px 0 16px 0;
+    border-radius: 48px;
+    border: 2px
+
+}
+
+.item-frame-left {
+    left: 36px;
+}
+
+.item-frame-right {
+    left: 1356px;
+}
+
+
+.frame-logo {
+    position: absolute;
+    width: 48px;
+    height: 104px;
+    top: 660px;
+    left: 1356px;
+    gap: 8px
+
+}
+
+
+.img1 {
+    width: 480px;
+    height: 800px
+}
+
+.img2 {
+    width: 480px;
+    height: 800px;
+    left: 480px;
+}
+
+.img3 {
+    width: 480px;
+    height: 800px;
+    left: 960px
+
+}
+
+.mask-group {
+    position: absolute;
+    width: 191px;
+    height: 232px;
+    top: 244px;
+    left: 625px;
+}
+
+.text {
+    position: absolute;
+    width: 420px;
+    height: 194px;
+    top: 540px;
+    left: 510px;
+}
+
+.lat2, .chinh2, .phu2, .back, .next, .anh2, .anh3 {
+    display: none;
+}
+
+@media screen and (max-width: 390px) {
+    .doc, .chinh, .lat, .phu, .contact, .frame-logo, .img1, .img3, .frame {
+        display: none;
+    }
+
+    .container {
+        width: 390px;
+        height: 797px;
+        overflow: hidden;
+    }
+
+    .header {
+        width: 390px;
+        height: 92px;
+        z-index: 1;
+    }
+
+    .logo {
+        width: 150px;
+        height: 60px;
+        top: 16px;
+        left: 16px;
+    }
+
+    .chinh2 {
+        display: block;
+        width: 390px;
+        top: 0;
+    }
+
+    .lat2 {
+        display: block;
+        width: 390px;
+        top: 325px;
+    }
+
+    .phu2 {
+        display: block;
+        top: 330px;
+        width: 390px;
+    }
+
+    .section-1_text {
+        top: 470px;
+        left: 20px;
+    }
+
+    .section-1_text > img {
+        width: 297px;
+    }
+
+    .khampha {
+        top: 600px;
+        left: 110px;
+        width: 152px;
+        height: 52px;
+        padding: 0px 12px 0px 12px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .khampha > p {
+        color: white;
+    }
+
+    .section-1_btn {
+        width: 130px;
+        height: 20px;
+        top: 27px;
+        left: 203px;
+        padding: 10px 20px 10px 20px;
+        background: #FFDE17;
+        font-size: 13px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .slider {
+        width: 40px;
+        height: 8px;
+        top: 640px;
+        left: 175px;
+        gap: 8px
+
+    }
+
+
+    .img2 {
+        width: 390px;
+        height: 430px;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    .mask-group {
+        width: 128px;
+        height: 156px;
+        top: 92px;
+        left: 131px
+
+    }
+
+    .text {
+        width: 281px;
+        height: 116px;
+        top: 282px;
+        left: 55px;
+
+    }
+
+    .back {
+        display: block;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 316px;
+        left: 16px;
+        /*padding: 10.25px 0px 10.5px 0px;*/
+        border-radius: 48px;
+        border: 2px;
+        z-index: 1;
+
+    }
+
+    .next {
+        display: block;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 316px;
+        left: 342px;
+        /*padding: 10.25px 0px 10.5px 0px;*/
+        border-radius: 48px;
+        border: 2px;
+        z-index: 1;
+
+    }
+
+    .anh2,
+    .anh3 {
+        display: block;
+        width: 195px;
+        height: 367px;
+        top: 430px;
+        left: 0;
+        position: absolute;
+    }
+
+    .anh3 {
+        left: 195px;
+    }
+
+    .slider {
+        width: 40px;
+        height: 8px;
+        top: 640px;
+        left: 175px;
+        gap: 8px;
+        z-index: 1;
+
+    }
+}
