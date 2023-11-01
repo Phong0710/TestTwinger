@@ -199,17 +199,19 @@
     .container {
         width: 390px;
         height: 797px;
+        top:0px;
         overflow: hidden;
         position: relative;
     }
 
-    /*.snapbar {*/
-    /*    display: block;*/
-    /*    position: absolute;*/
-    /*    width: 390px;*/
-    /*    height: 47px;*/
-    /*    top: 0;*/
-    /*}*/
+    .snapbar {
+        display: block;
+        position: absolute;
+        width: 390px;
+        height: 47px;
+        top: 0px;
+
+    }
     .tabbar{
         display: block;
         position: absolute;
@@ -287,15 +289,6 @@
         font-size: 13px;
         line-height: 20px;
         text-align: center;
-    }
-
-    .slider {
-        width: 40px;
-        height: 8px;
-        top: 640px;
-        left: 175px;
-        gap: 8px
-
     }
 
 
@@ -376,7 +369,7 @@
         top: 640px;
         left: 175px;
         gap: 8px;
-        z-index: 1;
+        /*z-index: 1;*/
     }
 
     .rectangle {
@@ -390,8 +383,8 @@
     .asset {
         position: absolute;
         width: 480px;
-        height: 480px;
-        top: -50px;
+        height: 430px;
+        top: 0px;
         left: 0px;
     }
 
